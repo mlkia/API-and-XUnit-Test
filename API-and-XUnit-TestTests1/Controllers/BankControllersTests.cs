@@ -30,8 +30,8 @@ namespace API_and_XUnit_Test.Controllers.Tests
         public void Withdraw()
         {
 
-            var expected = 45M;
-            var result = new BankControllers(sut).Withdraw(55M);
+            var expected = 45.5M;
+            var result = new BankControllers(sut).Withdraw(54.5M);
 
             Assert.Equal(expected, result);
         }
